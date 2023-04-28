@@ -25,7 +25,7 @@ export default function Home() {
         </div>
 
         <div className={styles.center}>
-          <p className="text-5xl">Hunting Coder</p>
+          <p className="text-5xl font-bold">Hunting Coder</p>
         </div>
 
         <div className={styles.grid}>
