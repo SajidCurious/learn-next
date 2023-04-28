@@ -14,85 +14,23 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className="bg-black">
-        <ul className="flex justify-end px-12 gap-20 items-center py-4 text-white font-semibold">
-          <li className="hover:underline-offset-4">Home</li>
-          <li>Blog</li>
-          <li>Contact</li>
-          <li>About</li>
+      <nav className="bg-black flex items-center justify-between">
+        <h1 className="text-white ml-12 font-bold text-2xl">Hunting Coder</h1>
+        <ul className="flex pr-12 gap-20 items-center py-4 text-white font-semibold">
+          <li className="hover:cursor-pointer">Home</li>
+          <li className="hover:cursor-pointer">Blog</li>
+          <li className="hover:cursor-pointer">Contact</li>
+          <li className="hover:cursor-pointer">About</li>
         </ul>
       </nav>
-      <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
+      <main>
+        <div className="flex items-center justify-around mt-10">
           <p className="text-2xl">
             A Blog for Hunting Coders by a Hunting Coder
           </p>
           <div>
             <p className="font-bold text-[16px]">by Mohammed Sajid</p>
           </div>
-        </div>
-
-        <div className={styles.center}>
-          <p className="text-5xl font-bold">Hunting Coder</p>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
         </div>
       </main>
     </>
