@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,9 @@ export default function Home() {
       <nav className="bg-black flex items-center justify-between">
         <h1 className="text-white ml-12 font-bold text-2xl">Hunting Coder</h1>
         <ul className="flex pr-12 gap-20 items-center py-4 text-white font-semibold">
-          <li className="hover:cursor-pointer">Home</li>
+          <Link href="/">
+            <li className="hover:cursor-pointer">Home</li>
+          </Link>
           <li className="hover:cursor-pointer">Blog</li>
           <li className="hover:cursor-pointer">Contact</li>
           <li className="hover:cursor-pointer">About</li>
