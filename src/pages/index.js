@@ -14,9 +14,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav>
-        <ul className="flex justify-end px-12 gap-10">
-          <li>Home</li>
+      <nav className="bg-black">
+        <ul className="flex justify-end px-12 gap-20 items-center py-4 text-white font-semibold">
+          <li className="hover:underline-offset-4">Home</li>
           <li>Blog</li>
           <li>Contact</li>
           <li>About</li>
