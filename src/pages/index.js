@@ -28,8 +28,23 @@ export default function Home() {
           <p className="text-2xl">
             A Blog for Hunting Coders by a Hunting Coder
           </p>
-          <div>
-            <p className="font-bold text-[16px]">by Mohammed Sajid</p>
+
+          <p className="font-bold text-[16px]">by Mohammed Sajid</p>
+        </div>
+
+        <div className="blogs mt-16 font-semibold">
+          <h1 className="text-3xl text-center">Popular Blogs</h1>
+          <div className="blogItem">
+            <h1>How to learn JavaScript in 2022?</h1>
+            <p>JavaScript is used to design logic for the Web</p>
+          </div>
+          <div className="blogItem">
+            <h1>How to learn JavaScript in 2022?</h1>
+            <p>JavaScript is used to design logic for the Web</p>
+          </div>
+          <div className="blogItem">
+            <h1>How to learn JavaScript in 2022?</h1>
+            <p>JavaScript is used to design logic for the Web</p>
           </div>
         </div>
       </main>
