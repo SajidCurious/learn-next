@@ -54,6 +54,10 @@
   transition: background 200ms, border 200ms;
 }
 
+.card:hover {
+  color: rgb(42, 42, 253);
+}
+
 .card span {
   display: inline-block;
   transition: transform 200ms;
