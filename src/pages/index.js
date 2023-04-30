@@ -33,7 +33,7 @@ export default function Home() {
         </ul>
       </nav>
       <main>
-        <div className="flex justify-start items-center mt-6 ml-6">
+        <div className="flex justify-center items-center mt-6 ml-6">
           <Image
             src="/homeimg.jpg"
             width={200}
@@ -47,19 +47,21 @@ export default function Home() {
             <p className="font-bold text-[16px]">by Mohammed Sajid</p>
           </div>
         </div>
-        <div className="blogs mt-16 font-semibold">
-          <h1 className="text-3xl text-center">Popular Blogs</h1>
-          <div className="blogItem">
-            <h1>How to learn JavaScript in 2022?</h1>
-            <p>JavaScript is used to design logic for the Web</p>
-          </div>
-          <div className="blogItem">
-            <h1>How to learn JavaScript in 2022?</h1>
-            <p>JavaScript is used to design logic for the Web</p>
-          </div>
-          <div className="blogItem">
-            <h1>How to learn JavaScript in 2022?</h1>
-            <p>JavaScript is used to design logic for the Web</p>
+        <div className="blogs mt-16 font-semibold flex flex-col items-center">
+          <h1 className="text-5xl">Popular Blogs</h1>
+          <div className="blogItems mt-10">
+            <div className="blogItem">
+              <h1>How to learn JavaScript in 2022?</h1>
+              <p>JavaScript is used to design logic for the Web</p>
+            </div>
+            <div className="blogItem">
+              <h1>How to learn JavaScript in 2022?</h1>
+              <p>JavaScript is used to design logic for the Web</p>
+            </div>
+            <div className="blogItem">
+              <h1>How to learn JavaScript in 2022?</h1>
+              <p>JavaScript is used to design logic for the Web</p>
+            </div>
           </div>
         </div>
       </main>
