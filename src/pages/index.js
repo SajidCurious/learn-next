@@ -33,20 +33,19 @@ export default function Home() {
         </ul>
       </nav>
       <main>
-        <div className="flex items-center justify-around mt-10">
-          <p className="text-2xl">
-            A Blog for Hunting Coders by a Hunting Coder
-          </p>
-
-          <p className="font-bold text-[16px]">by Mohammed Sajid</p>
-        </div>
-        <div className="flex justify-center mt-6">
+        <div className="flex justify-start items-center mt-6 ml-6">
           <Image
             src="/homeimg.jpg"
-            width={300}
-            height={20}
+            width={200}
+            height={1}
             className="rounded-3xl"
           ></Image>
+          <div className="ml-5">
+            <p className="text-2xl">
+              A Blog for Hunting Coders by a Hunting Coder
+            </p>
+            <p className="font-bold text-[16px]">by Mohammed Sajid</p>
+          </div>
         </div>
         <div className="blogs mt-16 font-semibold">
           <h1 className="text-3xl text-center">Popular Blogs</h1>
