@@ -21,9 +21,15 @@ export default function Home() {
           <Link href="/">
             <li className="hover:cursor-pointer">Home</li>
           </Link>
-          <li className="hover:cursor-pointer">Blog</li>
-          <li className="hover:cursor-pointer">Contact</li>
-          <li className="hover:cursor-pointer">About</li>
+          <Link href="/blog">
+            <li className="hover:cursor-pointer">Blog</li>
+          </Link>
+          <Link href="/contact">
+            <li className="hover:cursor-pointer">Contact</li>
+          </Link>
+          <Link href="/about">
+            <li className="hover:cursor-pointer">About</li>
+          </Link>
         </ul>
       </nav>
       <main>
