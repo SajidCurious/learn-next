@@ -7,7 +7,7 @@ const slug = () => {
   return (
     <div className="flex flex-col items-center">
       <h1 className="font-bold text-2xl mt-6">Title of the page {slug}</h1>
-      <p className="max-w-4xl mt-5">
+      <p className="max-w-6xl mt-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum explicabo
         possimus deleniti ab minus dolorem quisquam eos nemo ipsa maiores qui
         eum natus quam quas tenetur, laboriosam assumenda. Ducimus soluta
