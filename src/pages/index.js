@@ -17,6 +17,7 @@ export default function Home() {
         <div className="flex justify-center items-center mt-6 ml-6">
           <Image
             src="/homeimg.jpg"
+            alt="image"
             width={200}
             height={1}
             className="rounded-3xl"
