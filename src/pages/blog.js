@@ -1,7 +1,11 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 
 const blog = () => {
+  useEffect(() => {
+    console.log("effect is runnig");
+  }, []);
+
   return (
     <div className="blogs mt-5 font-semibold flex flex-col items-center">
       <h1 className="text-5xl">Popular Blogs</h1>
