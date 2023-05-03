@@ -1,9 +1,18 @@
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const blog = () => {
+  const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     console.log("effect is runnig");
+    fetch("http://localhost:3000/api/blogs")
+      .then((a) => {
+        return a.json();
+      })
+      .then((parsed) => {
+        console.log(parsed);
+        setBlogs(parsed);
+      });
   }, []);
 
   return (
