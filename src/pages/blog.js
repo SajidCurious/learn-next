@@ -17,27 +17,19 @@ const blog = () => {
 
   return (
     <div className="blogs mt-5 font-semibold flex flex-col items-center">
-      <h1 className="text-5xl">Popular Blogs</h1>
-      <div className="blogItems mt-10">
-        <div className="blogItem mb-6">
-          <Link href={"/blogpost/learn-javascript"}>
-            <h1 className="text-2xl">How to learn JavaScript in 2022?</h1>
-          </Link>
-          <p>JavaScript is used to design logic for the Web</p>
-        </div>
-        <div className="blogItem mb-6">
-          <Link href={"/blogpost/learn-javascript"}>
-            <h1 className="text-2xl">How to learn JavaScript in 2022?</h1>
-          </Link>
-          <p>JavaScript is used to design logic for the Web</p>
-        </div>
-        <div className="blogItem mb-6">
-          <Link href={"/blogpost/learn-javascript"}>
-            <h1 className="text-2xl">How to learn JavaScript in 2022?</h1>
-          </Link>
-          <p>JavaScript is used to design logic for the Web</p>
-        </div>
-      </div>
+      <h1 className="text-4xl">Popular Blogs</h1>
+      {blogs.map((blogitem) => {
+        return (
+          <div key={blogitem.slug} className="blogItems mt-10">
+            <div key={blogitem.slug} className="blogItem mb-6">
+              <Link href={`/blogpost/${blogitem.slug}`}>
+                <h1 className="text-2xl text-center mb-5">{blogitem.title}</h1>
+              </Link>
+              <p className="w-[800px]">{blogitem.content.substr(0, 400)}</p>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
