@@ -32,16 +32,16 @@ export default function Home() {
         <div className="blogs mt-16 font-semibold flex flex-col items-center">
           <h1 className="text-5xl">Popular Blogs</h1>
           <div className="blogItems mt-10">
-            <div className="blogItem">
-              <h1>How to learn JavaScript in 2022?</h1>
+            <div className="blogItem mb-6">
+              <h1 className="text-2xl">How to learn JavaScript in 2022?</h1>
               <p>JavaScript is used to design logic for the Web</p>
             </div>
-            <div className="blogItem">
-              <h1>How to learn JavaScript in 2022?</h1>
+            <div className="blogItem mb-6">
+              <h1 className="text-2xl">How to learn JavaScript in 2022?</h1>
               <p>JavaScript is used to design logic for the Web</p>
             </div>
-            <div className="blogItem">
-              <h1>How to learn JavaScript in 2022?</h1>
+            <div className="blogItem mb-6">
+              <h1 className="text-2xl">How to learn JavaScript in 2022?</h1>
               <p>JavaScript is used to design logic for the Web</p>
             </div>
           </div>
