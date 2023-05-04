@@ -25,7 +25,7 @@ const blog = () => {
               <Link href={`/blogpost/${blogitem.slug}`}>
                 <h1 className="text-2xl text-center mb-5">{blogitem.title}</h1>
               </Link>
-              <p className="w-[800px]">{blogitem.content.substr(0, 400)}</p>
+              <p className="w-[800px]">{blogitem.content.substr(0, 200)}</p>
             </div>
           </div>
         );
