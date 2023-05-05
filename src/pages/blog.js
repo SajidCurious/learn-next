@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 const blog = (props) => {
   console.log(props);
-  const [blogs, setBlogs] = useState([]);
+  const [blogs, setBlogs] = useState(props.allBlogs);
   // useEffect(() => {
   //   console.log("effect is runnig");
   //   fetch("http://localhost:3000/api/blogs")
