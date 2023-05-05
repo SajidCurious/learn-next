@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-const blog = () => {
+const blog = (props) => {
+  console.log(props);
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     console.log("effect is runnig");
@@ -33,5 +34,11 @@ const blog = () => {
     </div>
   );
 };
+
+export async function getServerSideProps(context) {
+  return {
+    props: { Sajid: "Good Boy" }, // will be passed to the page component as props
+  };
+}
 
 export default blog;
