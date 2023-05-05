@@ -4,17 +4,17 @@ import React, { useEffect, useState } from "react";
 const blog = (props) => {
   console.log(props);
   const [blogs, setBlogs] = useState([]);
-  useEffect(() => {
-    console.log("effect is runnig");
-    fetch("http://localhost:3000/api/blogs")
-      .then((a) => {
-        return a.json();
-      })
-      .then((parsed) => {
-        console.log(parsed);
-        setBlogs(parsed);
-      });
-  }, []);
+  // useEffect(() => {
+  //   console.log("effect is runnig");
+  //   fetch("http://localhost:3000/api/blogs")
+  //     .then((a) => {
+  //       return a.json();
+  //     })
+  //     .then((parsed) => {
+  //       console.log(parsed);
+  //       setBlogs(parsed);
+  //     });
+  // }, []);
 
   return (
     <div className="blogs mt-5 font-semibold flex flex-col items-center">
@@ -36,8 +36,10 @@ const blog = (props) => {
 };
 
 export async function getServerSideProps(context) {
+  let data = await fetch("http://localhost:3000/api/blogs");
+  let allBlogs = await data.json();
   return {
-    props: { Sajid: "Good Boy" }, // will be passed to the page component as props
+    props: { allBlogs },
   };
 }
 
