@@ -5,14 +5,13 @@ const contact = () => {
     <div className="flex flex-col items-center mt-20">
       <h1 className="text-3xl font-semibold">Contact Us</h1>
       <form className="mt-16">
-        <div className="mb-3">
-          <label for="exampleInputEmail1" className="form-label">
+        <div className="email">
+          <label for="exampleInputEmail1" className="mb-32">
             Email address
           </label>
           <br />
           <input
             type="email"
-            className="form-control"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
           />
@@ -20,22 +19,13 @@ const contact = () => {
             We'll never share your email with anyone else.
           </div>
         </div>
-        <div className="mb-3">
-          <label for="exampleInputPassword1" className="form-label">
-            Password
-          </label>
-          <input
-            type="password"
-            className="form-control"
-            id="exampleInputPassword1"
-          />
+        <div className="password">
+          <label for="exampleInputPassword1">Password</label>
+          <br />
+          <input type="password" id="exampleInputPassword1" />
         </div>
         <div className="mb-3 form-check">
-          <input
-            type="checkbox"
-            className="form-check-input"
-            id="exampleCheck1"
-          />
+          <input type="checkbox" id="exampleCheck1" />
           <label className="form-check-label" for="exampleCheck1">
             Check me out
           </label>
