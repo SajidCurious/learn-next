@@ -1,10 +1,13 @@
 import React from "react";
 
 const contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <div className="flex flex-col items-center mt-20">
       <h1 className="text-3xl font-semibold">Contact Us</h1>
-      <form className="mt-16 flex flex-col">
+      <form onSubmit={handleSubmit} className="mt-16 flex flex-col">
         <div>
           <div className="email mb-6">
             <label for="exampleInputEmail1" className="text-xl">
