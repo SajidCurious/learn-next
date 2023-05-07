@@ -4,33 +4,45 @@ const contact = () => {
   return (
     <div className="flex flex-col items-center mt-20">
       <h1 className="text-3xl font-semibold">Contact Us</h1>
-      <form className="mt-16">
-        <div className="email">
-          <label for="exampleInputEmail1" className="mb-32">
-            Email address
-          </label>
-          <br />
-          <input
-            type="email"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-          <div id="emailHelp" className="form-text">
-            We'll never share your email with anyone else.
+      <form className="mt-16 flex flex-col">
+        <div>
+          <div className="email mb-6">
+            <label for="exampleInputEmail1" className="text-xl">
+              Email address
+            </label>
+            <br />
+            <input
+              type="email"
+              className="mt-1 border border-black p-1 rounded-md"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" className="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div className="password">
+            <label for="exampleInputPassword1" className="text-xl">
+              Password
+            </label>
+            <br />
+            <input
+              type="password"
+              className="mt-1 p-1 border border-black rounded-md"
+              id="exampleInputPassword1"
+            />
+          </div>
+          <div className="checkbox mt-4 ">
+            <input type="checkbox" id="exampleCheck1" className="mr-2" />
+            <label className="form-check-label" for="exampleCheck1">
+              Check me out
+            </label>
           </div>
         </div>
-        <div className="password">
-          <label for="exampleInputPassword1">Password</label>
-          <br />
-          <input type="password" id="exampleInputPassword1" />
-        </div>
-        <div className="mb-3 form-check">
-          <input type="checkbox" id="exampleCheck1" />
-          <label className="form-check-label" for="exampleCheck1">
-            Check me out
-          </label>
-        </div>
-        <button type="submit" className="btn btn-primary">
+        <button
+          type="submit"
+          className="mt-8 text-xl text-white font-semibold border border-black rounded-md bg-blue-600"
+        >
           Submit
         </button>
       </form>
