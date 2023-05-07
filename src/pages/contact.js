@@ -2,13 +2,14 @@ import React from "react";
 
 const contact = () => {
   return (
-    <div>
-      <h1>Contact Us</h1>
-      <form>
+    <div className="flex flex-col items-center mt-20">
+      <h1 className="text-3xl font-semibold">Contact Us</h1>
+      <form className="mt-16">
         <div className="mb-3">
           <label for="exampleInputEmail1" className="form-label">
             Email address
           </label>
+          <br />
           <input
             type="email"
             className="form-control"
