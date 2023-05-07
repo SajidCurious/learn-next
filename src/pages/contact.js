@@ -32,11 +32,12 @@ const contact = () => {
               id="exampleInputPassword1"
             />
           </div>
-          <div className="checkbox mt-4 ">
-            <input type="checkbox" id="exampleCheck1" className="mr-2" />
-            <label className="form-check-label" for="exampleCheck1">
-              Check me out
-            </label>
+          <div className="textarea flex flex-col mt-4">
+            <label for="floatingTextarea2">Elaborate Your Concern</label>
+            <textarea
+              className="mt-1 border border-black rounded-md p-2"
+              id="floatingTextarea2"
+            ></textarea>
           </div>
         </div>
         <button
