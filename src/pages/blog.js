@@ -24,10 +24,13 @@ const blog = (props) => {
           <div key={blogitem.slug} className="blogItems mt-10">
             <div key={blogitem.slug} className="blogItem mb-6">
               <Link href={`/blogpost/${blogitem.slug}`}>
-                <h1 className="text-2xl text-center mb-5">{blogitem.title}</h1>
+                <h1 className="text-2xl mb-5">{blogitem.title}</h1>
               </Link>
               <p className="w-[800px]">{blogitem.content.substr(0, 200)}</p>
             </div>
+            <button className="font-semibold px-3 py-1 rounded-md bg-green-600 text-white">
+              Read More
+            </button>
           </div>
         );
       })}
