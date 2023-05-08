@@ -2,10 +2,10 @@ import React from "react";
 
 const about = () => {
   return (
-    <div>
-      <h1>About Hunting Coder</h1>
-      <h2>Introduction</h2>
-      <p>
+    <div className="m-auto max-w-[45vw] flex flex-col items-center mt-6">
+      <h1 className="text-3xl font-semibold">About Hunting Coder</h1>
+      <h2 className="text-2xl mt-5 font-semibold">Introduction</h2>
+      <p className="mt-5 font-medium">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea vel,
         deserunt deleniti sequi quia sit asperiores quae consequatur, non eos
         culpa rerum tempora dolores fugiat harum eaque eum cumque quas corrupti
