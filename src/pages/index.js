@@ -20,7 +20,7 @@ export default function Home() {
             alt="image"
             width={200}
             height={1}
-            className="rounded-3xl"
+            className="rounded-full"
           ></Image>
           <div className="ml-5">
             <p className="text-2xl">
@@ -30,19 +30,28 @@ export default function Home() {
           </div>
         </div>
         <div className="blogs mt-16 font-semibold flex flex-col items-center">
-          <h1 className="text-5xl">Popular Blogs</h1>
+          <h1 className="text-4xl">Popular Blogs</h1>
           <div className="blogItems mt-10">
             <div className="blogItem mb-6">
               <h1 className="text-2xl">How to learn JavaScript in 2022?</h1>
               <p>JavaScript is used to design logic for the Web</p>
+              <button className="font-semibold px-3 py-1 rounded-md bg-green-600 text-white mt-2">
+                Read More
+              </button>
             </div>
             <div className="blogItem mb-6">
               <h1 className="text-2xl">How to learn JavaScript in 2022?</h1>
               <p>JavaScript is used to design logic for the Web</p>
+              <button className="font-semibold px-3 py-1 rounded-md bg-green-600 text-white mt-2">
+                Read More
+              </button>
             </div>
             <div className="blogItem mb-6">
               <h1 className="text-2xl">How to learn JavaScript in 2022?</h1>
               <p>JavaScript is used to design logic for the Web</p>
+              <button className="font-semibold px-3 py-1 rounded-md bg-green-600 text-white mt-2">
+                Read More
+              </button>
             </div>
           </div>
         </div>
